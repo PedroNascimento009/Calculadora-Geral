@@ -8,34 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 
-    <title>Calculadora</title>
+    <title>Tabuada</title>
 </head>
 
 <body>
     <div class="container">
-        <h1>Calculadora</h1>
-        <input type="text" id="input">
-        <div class="container-btn">
-            <div class="items-num">
-                <button class="btn" onclick="numero(7)">7</button>
-                <button class="btn" onclick="numero(8)">8</button>
-                <button class="btn" onclick="numero(9)">9</button>
-                <button class="btn" onclick="numero(4)">4</button>
-                <button class="btn" onclick="numero(5)">5</button>
-                <button class="btn" onclick="numero(6)">6</button>
-                <button class="btn" onclick="numero(1)">1</button>
-                <button class="btn" onclick="numero(2)">2</button>
-                <button class="btn" onclick="numero(3)">3</button>
-                <button class="btn" onclick="numero(0)">0</button>
-            </div>
-            <div class="items-op">
-                <button onclick="deletar()">del</button>
-                <button onclick="somar()">+</button>
-                <button onclick="subtrair()">-</button>
-                <button onclick="dividir()">/</button>
-                <button onclick="resultado()">=</button>
-            </div>
-        </div>
+        <h1>Tabuada</h1>
+        <input type="text" id="input1" placeholder="Multiplicar de: ">
+        <span>x</span>
+        <input type="text" id="input2" placeholder="Ate que número?">
+        <button id="btn">Resultado</button>
+        <p id="resultado"></p>
     </div>
 </body>
 
