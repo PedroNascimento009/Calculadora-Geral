@@ -1,2 +1,2 @@
 # Calculadora-Geral
-Calculadora simples com soma, divisão e subtração
+Calculadora simples com soma, divisão, subtração e multiplicação
