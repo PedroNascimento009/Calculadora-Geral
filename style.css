@@ -1,3 +1,42 @@
 .container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+
+    width: 50vh;
+    margin: 0 auto;
+}
+
+#ip {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.container-btn {
+    display: flex;
+    gap: 5px;
+
+    margin-top: 10px;
+}
+
+.items-num {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-basis: 80%;
+    gap: 5px;
+}
+
+.btn {
+    padding: 20px;
+}
+
+.btn:nth-child(10) {
+    width: 308%;
+}
+
+.items-op {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-basis: 20%;
+    gap: 5px;
 }

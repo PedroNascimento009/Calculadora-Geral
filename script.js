@@ -1,13 +1,29 @@
-const primeiroInput = document.querySelector('#input1')
-const segundoInput = document.querySelector('#input2')
-const botao = document.querySelector('#btn')
-const resultado = document.querySelector('#resultado')
-const container = document.querySelector('.container')
+const btn = document.querySelectorAll('.btn')
+const ip = document.querySelector('#ip')
+const resultado = document.querySelector('#result')
+const deletar = document.querySelector('#delet')
 
-function adicionar () {
-    for(let i = 0; i <= segundoInput.value; i++){
-        
-    }
-}
+const addNumero = (n) => ip.textContent += n
 
-botao.addEventListener('click',  adicionar)
+const addOperador = (op) => ip.textContent += op
+
+resultado.addEventListener('click', () => {
+    const valorAntigo = ip.textContent
+    const novoValor = eval(valorAntigo)
+    ip.textContent = novoValor
+})
+
+deletar.addEventListener('click', () => {
+    ip.textContent= ''
+})
+
+btn.forEach(botao => {
+    botao.addEventListener('click', () => {
+        const numero = botao.dataset.n
+        const operador = botao.dataset.op
+        if(numero){
+            addNumero(numero)
+        } else if(operador){
+            addOperador(operador)
+        }
+})});
